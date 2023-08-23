@@ -1,0 +1,15 @@
+Explanation for the  Question 1:-
+
+
+1. Firstly I started by defining a function named length_of_longest_substring that takes a string `s` as input.
+2. Inside the function, i declared some variables like char_index_map, max_length, start.
+3. Then I run a loop through all the characters inide the input string s.
+4. For each character the loop check if it's already in the char_index_map. 
+5. Then checks if its index is greater than or equal to the current index that means the start index.
+6. If both conditions are true, it means this character is the repeating character in the substring.
+7. After this the index at start is updated to the next index to exclude the repeating character from the current substring.
+8. Then the char_index_map is updated with the current character's index.
+9. The length of the current substring is calculated using end - start + 1.
+10. Then the max_length and current max_length is updated with the calculated length.
+11. Once the loop has runned through all the characters, we return the max_length, which is the length of the longest substring without repeating characters.
+12. And at the last I have taken input from the user and then print the desired output.
